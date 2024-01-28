@@ -1,7 +1,12 @@
 
   
-  .friend-list li {
-    margin-bottom: 16px; /* Задайте відступ між елементами списку */
-    border: 1px solid #e90a0a; /* Додаємо рамку */
-    padding: 10px; /* Додаємо внутрішній відступ для контенту */
+  .friendlist {
+    justify-content: center;
+   
+  }
+
+  .friendAbout {
+    display: inline;
+  
+   
   }

@@ -1,23 +1,42 @@
 .item {
-    display: flex;
+    display: inline-block;
+    margin: 10px;
+    flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid #1a012b;
     padding: 10px;
     margin-bottom: 10px;
+    justify-content: center;
+    font-family:'Open sans';
+    box-shadow: 0 4px 8px rgb(248, 247, 247);
+    /* Ширина карточки */
   }
   
   .avatar {
-    margin-right: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .status {
+    margin-top: auto;
+    align-items: center;
+    justify-content: center;
   }
   
   .name {
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
   }
   
-  .status {
-    color: green; /* Зелений колір для Online */
+  .isOnline {
+    color: green;
+    align-items: center;
   }
   
-  .status.offline {
-    color: red; /* Червоний колір для Offline */
+  .offline {
+    color: red;
+    align-items: center;
   }

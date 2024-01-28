@@ -1,19 +1,27 @@
 
-import { FriendListItem } from '../FriendListItem/FriendListItem';
 
-
-
+//import clsx from "clsx";
+import { FriendListItem } from "../FriendListItem/FriendListItem";
+import css from "./FriendList.module.css";
 
 export const FriendList = ({ friends }) => {
-    return (
-      <ul className={friends}>
-        {friends.map((friend) => (
-          <li key={friend.id}>
-            <FriendListItem friend={friend} />
+  return (
+    <ul className={css.friendList}>
+      {friends.map(({ isOnline, id, avatar, name }) => {
+        return (
+          <li
+            className={css.friendAbout}
+            key={id}
+          >
+            <FriendListItem
+              avatar={avatar}
+              name={name}
+              isOnline={isOnline}
+            />
           </li>
-        ))}
-      </ul>
-    );
-  };
-  
- 
+        );
+      })}
+    </ul>
+  );
+};
+
