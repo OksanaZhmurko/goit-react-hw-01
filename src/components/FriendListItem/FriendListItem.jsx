@@ -10,10 +10,10 @@ export const FriendListItem = ({ avatar, name, isOnline })  => {
   });
 
     return (
-      <div className={css.item}>
+      <li className={css.item}>
         <img className={css.avatar} src={avatar} alt={name} width="48" />
         <p className={css.nameFriends}>{name}</p>
         <p className={statusClasses}>{isOnline ? 'Online' : 'Offline'}</p>
-      </div>
+      </li>
     );
     };
